@@ -1,0 +1,14 @@
+Q: What is the capital of France?
+A: Paris
+1. Berlin
+2. Rome
+3. Paris
+4. Madrid
+
+Q: Who is the author of the Harry Potter series?
+J.K. Rowling
+1. J.R.R. Tolkien
+2. George R.R. Martin
+3. J.K. Rowling
+4. John Green
+
