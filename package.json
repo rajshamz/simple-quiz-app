@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/johnbabu021/quiz-app#readme",
   "dependencies": {
-    "http-server": "^13.0.2"
-    
+    "http-server": "^13.0.2",
+    "jest": "^26.4.0"
   }
 }
