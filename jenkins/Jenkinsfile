@@ -13,16 +13,14 @@ pipeline {
                 }
             }
         }
-        stage('Deploy to Docker Host') {
-            stage('Deploy to Docker Desktop') {
-                steps {
-                    script {
-                        sh 'docker stop quiz-app || true'
-                        sh 'docker rm quiz-app || true'
-                        sh 'docker run --name quiz-app -d -p 8099:80 quiz-app:latest'
-                    }
+        stage('Deploy to Docker Desktop') {
+            steps {
+                script {
+                    sh 'docker stop quiz-app || true'
+                    sh 'docker rm quiz-app || true'
+                    sh 'docker run --name quiz-app -d -p 8099:80 quiz-app:latest'
                 }
             }
         }
-    }
+     }
 }
