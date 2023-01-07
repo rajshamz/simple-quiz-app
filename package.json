@@ -6,6 +6,7 @@
   "main": "scripts.js",
   "scripts": {
     "start": "http-server --port 8080"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,6 @@
   "homepage": "https://github.com/johnbabu021/quiz-app#readme",
   "dependencies": {
     "http-server": "^13.0.2"
+    
   }
 }
