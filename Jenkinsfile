@@ -18,7 +18,7 @@ pipeline {
                 script {
                     sh 'docker stop quiz-app || true'
                     sh 'docker rm quiz-app || true'
-                    sh 'docker run --name quiz-app -d -p 8099:80 quiz-app:latest'
+                    sh 'docker run --name quiz-app -d -p 8099:8080 quiz-app:latest'
                 }
             }
         }
