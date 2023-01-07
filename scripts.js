@@ -97,7 +97,7 @@ const evalFunc = async function () {
 // xhttp.send()
 
 async function getData() {
-    const response = await axios.get(`https://opentdb.com/api.php?amount=10`);
+    const response = await axios.get(`https://opentdb.com/api.php?amount=20&category=18`);
     return response;
 }
 
