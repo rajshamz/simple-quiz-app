@@ -14,13 +14,12 @@ pipeline {
             }
         }
         stage('Deploy to Docker Host') {
-            steps {
-                withDockerHost([
-                    url: 'unix:///var/run/docker.sock'
-
-                ]) {
+            stage('Deploy to Docker Desktop') {
+                steps {
                     script {
-                        docker.image("quiz-app:latest").push("latest")
+                        sh 'docker stop quiz-app || true'
+                        sh 'docker rm quiz-app || true'
+                        sh 'docker run --name quiz-app -d -p 8099:80 quiz-app:latest'
                     }
                 }
             }
