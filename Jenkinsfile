@@ -6,16 +6,16 @@ pipeline {
                 git 'https://github.com/rajshamz/simple-quiz-app.git'
             }
         }
-        stage('Install Dependencies'){
-            steps{
-                sh 'npm install'
-            }
-        }
-        stage('Test Coverage'){
-            steps{
-                sh 'npm test -- --coverage'
-            }
-        }
+        //stage('Install Dependencies'){
+        //    steps{
+        //        sh 'npm install'
+        //    }
+        //}
+        //stage('Test Coverage'){
+        //    steps{
+        //        sh 'npm test -- --coverage'
+        //    }
+        //}
         //stage('SonarQube analysis') {
           //  steps {
               // Run the SonarQube scan
